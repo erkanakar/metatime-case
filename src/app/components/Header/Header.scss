@@ -1,0 +1,33 @@
+header {
+    padding: 40px 0;
+    border-bottom: 1px solid #2D2E36;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1400px) {
+        .container {
+            max-width: 1336px;
+        }
+    }
+}
+
+.mobile-menu-hamburger {
+    cursor: pointer;
+    span {
+        display: block;
+        height: 2px;
+        width: 30px;
+        border-radius: 2px;
+        background-color: #fff;
+        &:nth-child(2) {
+            margin: 7px 0;
+        }
+    }
+}
+
+.navigation-menu {
+    display: none;
+    height: calc(100vh - 121px);
+    &.expanded {
+        display: block;
+    }
+}

@@ -1,0 +1,49 @@
+.hot-bids-area {
+    padding: 30px 0;
+
+    h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    &-inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+
+    button {
+        border-radius: 10px;
+        padding: 9px 110px;
+        text-decoration: none;
+        background: #24252D;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-clip: padding-box;
+        position: relative;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #DA18A3;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin: -1px;
+            border-radius: inherit;
+            background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
+        }
+    }
+}

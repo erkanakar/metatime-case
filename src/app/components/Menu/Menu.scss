@@ -1,0 +1,40 @@
+.desktop-menu {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        padding: 0 10px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 14px;
+            padding: 0 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #4F4F4F;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktop-menu {
+        display: block;
+        height: 67vh;
+        li {
+            padding: 7px 15px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.hot-bids-box {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 10px;
+
+    @media screen and (max-width: 990px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    &-inner {
+        background: #2A2D3A;
+        border-radius: 20px;
+        padding: 11px 12px 19px;
+    }
+
+    &-img {
+        border-radius: 20px;
+        overflow: hidden;
+        height: 230px;
+        margin-bottom: 15px;
+
+        img {
+            max-width: 100%;
+            height: 100%;
+            width: auto;
+            line-height: 0;
+        }
+    }
+
+    &-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 5px;
+    }
+
+    &-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 12px;
+        line-height: 18px;
+
+        &-price {
+            &-total {
+                font-weight: 600;
+            }
+
+            &-currency {
+                font-weight: 400;
+            }
+        }
+
+        &-fav {
+            span {
+                margin-right: 2px;
+                display: inline-block;
+                height: 10.6761474609375px;
+                width: 12px;
+                background-image: url(./fav.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &-img {
+            height: 143px;
+        }
+    }
+}

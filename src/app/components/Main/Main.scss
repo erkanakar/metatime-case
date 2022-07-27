@@ -1,0 +1,74 @@
+main {
+    padding: 30px 0;
+}
+
+.main-banner {
+    background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
+    border-radius: 25px;
+    padding: 95px 53px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 338px;
+        height: 338px;
+        left: -169px;
+        top: -169px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 338px;
+        height: 338px;
+        right: -37px;
+        top: 131px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-family: 'Gotham';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 105.7%;
+        color: #FFFFFF;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 35px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 53px 18px;
+
+        &::before {
+            width: 100px;
+            height: 100px;
+            left: -50px;
+            top: -55px;
+        }
+
+        &::after {
+            width: 100px;
+            height: 100px;
+            bottom: -29px;
+            right: -24px;
+            top: unset;
+            left: unset;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: unset;
+        }
+    }
+
+
+}
